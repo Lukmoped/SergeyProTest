@@ -22,7 +22,7 @@
       become_method: su
 
     - name: start Flaskex
-      shell: cd /home/flaskex/Flaskex &&  pip3 install -r requirements.txt && python3 app.py
+      shell: cd /home/flaskex/Flaskex &&  pip3 install -r requirements.txt && python3 app.py&
       become: true
       become_user: flaskex
       become_method: su
